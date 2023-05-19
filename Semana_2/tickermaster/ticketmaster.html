@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Master (Remastered)</title>
+    <link rel="icon" href="./logo.png" type="image/icon">
+</head>
+<body bgcolor="#BAF1FF">
+    <br><br>
+    <h1 align="center">Ticketmaster</h1>
+    <br><br>
+    <div align="center"><img src='./barra.jpg' alt="barra"></div>
+    <br><br>
+    <h3 align="center">En razón de todos los problemas recientes, hemos actualizado y mejorado nuestra página, sin bugs, y sin fallas. TicketMaster Remastered es tu mejor nueva opción para cualquier evento;).</h3>
+    <br><br>
+    <form action="./receipt.php" method="post" target="_blank">
+        <fieldset>
+            <legend>Datos del evento</legend>
+            <br>
+            <label>Nombre(s):
+                <input required name="Nombre" class="name" type="text"/>
+            </label>
+            <br><br>
+            <label>Apellido(s):
+                <input required name="Apellido" class="name" type="text"/> 
+            </label>
+            <br><br>
+            <label for="Artista">Artista:</label>
+                <select required name="Artista" id: "Artista">
+                    <option value="Arctic Monkeys">Arctic Monkeys</option>
+                    <option value="Morat">Morat</option>
+                    <option value="Luis Miguel">Luis Miguel</option>
+                    <option value="Molotov">Molotov</option>
+                    <option value="Siddhartha">Siddhartha</option>
+                </select>
+            <br><br>
+            <label for="Lugar">Lugar:</label>
+                <select required name="Lugar" id: "Lugar">
+                    <option value="Foro Sol">Foro Sol</option>
+                    <option value="Auditorio Nacional">Auditorio Nacional</option>
+                    <option value="Palacio de los Deportes">Palacio de los Deportes</option>
+                    <option value="Teatro Metropolitan">Teatro Metropolitan</option>
+                </select>
+            <br><br>
+            <label for="Zona">Zona:</label>
+                <select required name="Zona" id: "Zona">
+                    <option value="General A (de pie)">General A (de pie)</option>
+                    <option value="General B (de pie) ">General B (de pie)</option>
+                    <option value="Sección C">Sección C</option>
+                    <option value="Sección D">Sección D</option>
+                </select>
+            <br><br>
+            <label for="Boletos">No. de Boletos:</label>
+                <input required name="NodeBoletos" type="number" min="1" max="15" id="Boletos">
+            <br><br>
+            <label for="Fecha">Fecha:
+                <input required name= "Fecha" type="date">
+            </label>
+            <br><br><br>
+            <label><strong>Extras:</strong></label>
+            <br><br>
+            <label>
+                <input name="preferencia[]" value="Meet & Greet" type="checkbox"> Meet & Greet
+            </label>
+            <br><br>
+            <label> 
+                <input name="preferencia[]" value="Estacionamiento" type="checkbox"> Estacionamiento
+            </label>
+            <br><br>
+            <label> 
+                <input name="preferencia[]" value="Paquete de comida (bebida incluida)" type="checkbox"> Paquete de comida (bebida incluida)
+            </label>
+            <br><br><br>
+            <label>He leído y acepto la <u>política de privacidad.</u>
+                <input type="checkbox" required>
+            </label>
+            <br><br>
+            <label>
+                <input type="reset">
+            </label>
+            <label>
+                <input type="submit">
+            </label>
+        </fieldset>
+    </form>
+    <br><br><br>
+    <h3 align="center">Gracias por tu preferencia:)</h3>
+    <br><br>
+    
+</body>
+</html>
