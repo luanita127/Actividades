@@ -37,59 +37,23 @@
 <br>
 <?php
     $frase=(isset($_POST["frase"]) && $_POST["frase"]!="")? $_POST["frase"]: false;
-    // $separar=explode(" ",$frase);
-    // //$arreglo=array($separar);
-
-    // foreach($separar as $localidades)
-    //     $numero++;
-        
-    // echo "<br><br>";
-    // echo $numero;
-
-    // for($i=0;$i==$numero-1;$i++)
-    //     $separar[$i]." ";
-
-    // shuffle($separar);
-    // echo "<br>";
-    // //$desordenado=var_dump($separar);
-    // echo "<br>";
-    // for($i=0;$i<=$numero-1;$i++)
-    // {
-    //     echo $separar[$i]." ";
-    // }
-
-    //== Desordenar ==//
-
-    $separar=explode(" ",$frase);//Separa la frase en un arreglo
-    foreach($separar as $localidades)//Calcula el numero de localidades del arreglo
-        $numero++;  
-    echo "<br><br>";
-    for($i=0;$i==$numero-1;$i++) //Asigna un numero de localidad
-        $separar[$i]." ";
-    shuffle($separar); //Barajea
-    echo "<br>";
-    function imprimir($numero, $separar)
+    $largo=0;
+    function imprimir($largo, $frase)
     {
-        for($i=0;$i<=$numero-1;$i++) //Imprime el arreglo
-            echo $separar[$i]." "; 
+        $largo=strlen($frase);
+        for($i=$largo-1;$i>=0;$i--)
+            echo $frase[$i];
     }
-    
-    echo "<br><br><br><br><br><br>";
-    
-
-    //== Imprimir ==//
-
-    $insertar=rand(50,1900);
+    $insertar=rand(50,2000);
     for($conteo=1;$conteo<=2000;$conteo++)
     {
         $generador=rand(32,127);
-        echo chr($generador);
-        if($insertar==$conteo)
-        {
-             echo "<strong style= 'color: red'>";  imprimir($numero, $separar);  echo "</strong>";
-            $conteo++;
-        }
+        echo htmlspecialchars(chr($generador));
+        if($insertar==$conteo) 
+            echo "<strong style= 'color: red'> &nbsp", imprimir($largo, $frase)." " ,"</strong>";
     }
+    
+
 
     ?>
 </body>
