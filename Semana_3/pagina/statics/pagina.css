@@ -1,0 +1,431 @@
+/* ========================== PÁGINA ========================== */
+
+
+/* ============ TIPOGRAFÍAS ============ */
+@font-face 
+{
+    font-family: Presidium;
+    src: url(./fonts/presidiumscripttypeface/PresidiumScriptTypeface.ttf);
+}
+
+@font-face 
+{
+    font-family: Methadone;
+    src: url(./fonts/methadone.ttf);
+}
+
+@font-face
+{
+    font-family: Extradicta;
+    src: url(./fonts/Extradicta.ttf)
+}
+
+
+
+
+/* ============ ETIQUETAS ============ */
+header
+{
+    font-family: "Presidium", serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(121, 175, 199);
+    padding: 2px;
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h2
+{
+    background-color: rgb(121, 175, 199);
+    font-family: Methadone;
+    padding: 10px;
+    margin: 0;
+
+}
+
+p,ol,ul,td,th
+{
+    font-family: "Extradicta";
+    font-size: large;
+    font-weight: 500;
+}
+
+
+
+
+/* ============ CLASES ============ */
+.hover:hover
+{
+    transform: scale(2);
+}
+
+.blanco
+{
+    color:rgb(255, 255, 255);
+}
+
+.margin
+{
+    margin:auto;
+}
+
+
+
+/* ============ ID ============ */
+#contenedor1
+{
+    background-color: rgb(211, 241, 250);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+    padding: 10px;
+}
+
+#intro
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#carrera
+{
+    background-color: rgb(211, 241, 250);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+    
+}
+
+#libros
+{
+    background-image: url(./img/libros.jpg);
+    opacity: 0.95;
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+}
+
+#container
+{
+    margin:0;
+}
+
+#comidas
+{
+    background-color: rgb(211, 241, 250);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+}
+
+#personajes
+{
+    background-color: rgb(211, 241, 250);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+}
+
+#tabla
+{
+    background-image: url(./img/fondo2.jpg);
+    padding: 2rem;
+    margin: auto;
+    border: 1rem;
+    width:60%;
+    text-align: center;
+    height:18rem;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#cancion
+{
+    background-image: url(./img/offended.jpg);
+    margin:auto;
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;   
+}
+
+#canciones
+{
+    background-color: rgb(211, 241, 250);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+}
+
+#temas
+{
+    background-color: rgb(211, 241, 250);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+    padding:0%; 
+}
+
+#videos
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#centrar
+{
+    text-align: center;
+}
+
+
+
+/* ========================== DIBUJO ========================== */
+
+
+
+/* ============ CLASES ============ */
+.dibujo
+{
+    background-color: rgb(203, 243, 250);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+    padding:0%;
+}
+
+.oso
+{
+    background-color: rgb(203, 243, 250);
+    height: 40rem;
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.rostro
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top:-4rem;
+    left:29rem;
+}
+
+.pupila
+{
+    width: 10px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    top: 20px;
+    left: 28px; 
+    z-index: 3;
+}
+
+.nariz::before
+{
+    content:"";
+    width:6px;
+    height:14px;
+    position: absolute;
+    top: 50px;
+    left:12px;
+    background-color: rgb(0, 0, 0);
+    z-index: 3;
+}
+
+
+
+/* ============ ID's ============ */
+#bobo
+{
+    font-family: "Presidium", serif;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    margin-left: 50px ;
+    margin-right: 50px ;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+#cara
+{
+    width: 28rem;
+    height: 30rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+#externo
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    top:25rem;
+    left:28rem;
+}
+
+#orejaiz
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position:relative;
+    top: -26rem;
+    left:9rem; 
+    z-index: 0;
+}
+
+#timpanoiz
+{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgb(251, 172, 172);
+    position:absolute;
+    top: 40px;
+    left:35px; 
+    z-index: 0;
+}
+
+#orejade
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position:relative;
+    top: -26rem;
+    left:21rem; 
+    z-index: 0;
+}
+
+#timpanode
+{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgb(251, 172, 172);
+    position:absolute;
+    top:45px;
+    left:35px; 
+    z-index: 0;
+}
+
+#nariz
+{
+    width: 7rem;
+    height: 5rem;
+    border: 5px solid;
+    border-color: rgb(208, 208, 208);
+    border-radius: 50%;
+    background-color: rgb(208, 208, 208);
+    position:absolute;
+    top: 325px;
+    left:320px; 
+    z-index: 2;
+}
+
+#campanita
+{
+    width: 4rem;
+    height: 3rem;
+    border: 5px solid;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position:relative;
+    top: 15px;
+    left:20px; 
+    z-index: 2;
+}
+
+#brillo
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position:relative;
+    top: 10px;
+    left:8px; 
+    z-index: 2;
+}
+
+#nariz::before
+{
+    content:"";
+    width: 5px;
+    height: 60px;
+    border: 0px;
+    border-color: black;
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    top: 60px;
+    left:54px; 
+    z-index: 2;
+}
+
+#nariz::after
+{
+    content:"";
+    width: 50px;
+    height: 30px;
+    border: 5px solid;
+    position:absolute;
+    top: 90px;
+    left:25px; 
+    z-index: 2;
+    border-radius: 0 0 60px 60px;
+    border-top: transparent;
+}
+
+#ojoiz
+{
+    width: 3rem;
+    height: 4rem;
+    border: 5px solid;
+    border-color: black;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    top: 220px;
+    left:270px; 
+    z-index: 2;
+}
+
+#ojode
+{
+    width: 3rem;
+    height: 4rem;
+    border: 5px solid;
+    border-color: black;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    top: 220px;
+    left:430px; 
+    z-index: 2;
+} 
+
+
+
