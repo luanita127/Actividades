@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<, initial-scale=1.0">
-    <title>Libro</title>
-    <link rel="icon" href="./libre.png" type="image/icon">
+    <title>Libro monudo</title>
+    <link rel="icon" href="../../statics/libre.png" type="image/icon">
 </head>
 <body>
 <h1 align="center">Libro hallado</h1>
@@ -14,6 +14,7 @@
     //====== Información recibida ======//
     $frase=(isset($_POST["frase"]) && $_POST["frase"]!="")? $_POST["frase"]: false;
     $modo=(isset($_POST["Modo"]) && $_POST["Modo"]!="")? $_POST["Modo"]: false;
+    $horario=(isset($_POST["horario"]) && $_POST["horario"]!="")? $_POST["horario"]: false;
 
     //====== Casos ======//
     function casos($frase,$modo)
@@ -128,11 +129,24 @@
                     }
 
     }
+
+    //====== Nombre del Libro ======//
+    function nombre()
+    {
+        for($i=0;$i<=9;$i++)
+        {
+            $nameLibro = rand(48,122);
+            echo htmlspecialchars(chr($nameLibro));
+            if($nameLibro<=57 && $nameLibro>=97)
+                echo "<strong>".chr($nameLibro)."</strong>";
+        }
+    }
+
     echo "
     <table border='1'>
     <thead>
         <tr>
-            <th>Libre<th>
+            <th>Libre: ", nombre() ,"<th>
         </tr>
     <thead>
     <tbody>
@@ -143,5 +157,16 @@
 
 
     </table>
-    " ; 
+    <br><br>
+    " ;
+    
+    $fechaActual= time();
+        $fechaCreacion= rand(0,$fechaActual);
+        
+        echo "La fecha de consulta de este libro fue: "."<strong>".date("d/F/Y")."</strong>";
+        echo " a las: "."<strong>".date("h:i a")."</strong>";
+        echo " en la zona horaria de "."<strong>".$horario."</strong>"."<br><br>";
+
+        echo "Este libro fue creado el "."<strong>".date("d/F/Y", $fechaCreacion)."</strong>";
     ?>
+
