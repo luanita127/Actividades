@@ -1,0 +1,35 @@
+@font-face {
+    font-family: pokemon;
+    src: url(./fonts/pokemon/Pokemon\ Solid.ttf);
+}
+
+
+
+
+body
+{
+    background-image: url(./media/imagen.jpg);
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 240, 112);
+    padding: 0%;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: pokemon;
+    color: rgb(18, 93, 233);
+}
+
+h3
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(21, 65, 145);
+    padding: 0%;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: rgb(255,255,255)
+}
