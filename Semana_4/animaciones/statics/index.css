@@ -1,0 +1,470 @@
+
+/* ========== FUENTES ========== */
+
+@font-face {
+    font-family: nombre;
+    src: url(./fonts/minecraft/Minecraft.ttf);
+}
+
+
+
+
+/* ========== ETIQUETAS ========== */
+
+body
+{
+    background-image: url(./media/bg-wool-dark.png);
+}
+
+h1
+{
+    font-family: nombre;
+    font-size: 100px;
+    display: grid;
+    justify-content: center;
+    margin:0%;
+    color:rgb(151, 151, 151)
+}
+
+
+
+
+/* ========== CLASES ========== */
+
+.contenedor
+{
+    background-color: rgb(199, 199, 199);
+    display: grid;
+    grid-template-rows: repeat(5,15rem);
+    grid-template-columns: repeat(5,15rem);
+    gap: 10px;
+    justify-content: center;
+    /*align-content: center;*/
+    padding: 1rem;
+    margin: auto;
+    width:78rem;
+    height:78rem;
+} 
+
+.texto
+{
+    font-family: nombre;
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+
+/* ========== ID (TEXTO) ========== */
+
+#principal 
+{
+    width: 400px;
+    height: 200px;
+    position:absolute;
+    top: 16rem;
+    left: 70.5rem;
+}
+
+
+#uno 
+{
+    position:absolute;
+    top: 27rem;
+    left:26rem;
+}
+
+
+#dos
+{
+    position:absolute;
+    top: 31rem;
+    left:42rem;
+}
+
+
+#tres
+{
+    position:absolute;
+    top: 37rem;
+    left:23rem;
+}
+
+
+#cuatro
+{
+    position:absolute;
+    top: 43rem;
+    left:76rem;
+}
+
+
+#cinco
+{
+    position:absolute;
+    top: 71.5rem;
+    left:88rem;
+    z-index: 5;
+}
+
+
+#seis
+{
+    position:absolute;
+    top: 51rem;
+    left:40rem;
+}
+
+
+#siete 
+{
+    position:absolute;
+    top: 84rem;
+    left:82rem;
+}
+
+
+#cartel1
+{
+    position: absolute;
+    top: 82.5rem;
+    left:78rem;
+}
+
+
+#cartel2
+{
+    position: absolute;
+    top: 70.5rem;
+    left:87rem;
+    z-index: 4;
+}
+
+
+
+
+
+/* ========== ID (ANIMACIONES Y TRANSICIONES) ========== */
+
+/* ====== caja1 (cerdito) ======*/
+#caja1
+{
+    background-color: blue;
+    grid-column:1/4;
+    grid-row: 1/2;
+
+    background: url(./media/pasto.jpg);
+}
+
+    /* === papa ===*/
+    #papa
+    {
+        position: relative;
+        left: 2rem;
+        bottom: -8rem;
+        z-index: 3;
+        opacity: 1;
+
+        animation-name:  papa;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+        @keyframes papa
+        {
+            /* 0%{left:2rem; opacity: 1;} */
+            0%{opacity: 1;}
+            90%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+    
+    /* === cerdito ===*/
+    #cerdito
+    {
+        position: relative;
+        left: 32rem;
+        bottom: 3rem;
+        z-index: 3;
+
+        animation-name:  cerdito;
+        animation-duration: 4s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+    }
+        @keyframes cerdito
+        {
+            0%{left:32rem;}
+            100%{left:5rem;}
+        }
+
+
+
+/* ======= caja2 ======*/
+#caja2
+{
+    background-image: url(./media/libro.png);
+    grid-column:4/6;
+    grid-row: 1/2;
+
+}
+
+
+
+/* ======= caja3 ======*/
+#caja3
+{
+    background-image: url(./media/letrero.png);
+    grid-column:1/3;
+    grid-row: 2/3;
+}
+
+
+/* ====== caja4 (trigo) ======*/
+#caja4
+{
+    background-image: url(./media/letrero.png);
+    grid-column:3/6;
+    grid-row: 2/3;
+
+    animation-name:  trigo;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+    @keyframes trigo 
+    {
+        0%{background-image: url(./media/trigo1.png);}
+        16.6%{background-image: url(./media/trigo2.png);}
+        33.3%{background-image: url(./media/trigo3.png);}
+        49.9%{background-image: url(./media/trigo4.png);}
+        66.5%{background-image: url(./media/trigo5.png);}
+        83.1%{background-image: url(./media/trigo6.png);}
+        100%{background-image: url(./media/trigo1.png);}
+
+    }
+
+
+
+/* ====== caja5 (flor) ======*/
+#caja5  
+{
+    background-color: rgb(125, 182, 125);
+    grid-column:1/2;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
+#flor
+{
+    width: 70%;
+    height: 100%;
+    left: 1rem;
+    position:relative;
+
+    animation-name: florm;
+    animation-duration: 9s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; 
+}
+    @keyframes florm 
+    {
+        0%{background: url(./media/allium.png) no-repeat; background-color: rgb(125, 182, 125); }
+        33.3%{background: url(./media/lila.png) no-repeat; background-color: rgb(125, 182, 125);}
+        66.6%{background: url(./media/peonia.png) no-repeat; background-color: rgb(125, 182, 125);}
+        100%{background: url(./media/allium.png) no-repeat; background-color: rgb(125, 182, 125);}
+    }
+
+
+
+/* ======= caja6 ======*/
+#caja6
+{
+    background-image: url(./media/letrero.png);
+    grid-column:2/5;
+    grid-row: 3/4;
+}
+
+
+/* ====== caja7 (perrito) ======*/
+#caja7
+{
+    grid-column:5/6;
+    grid-row: 3/4;
+
+    background: url(./media/lobo.png) no-repeat;
+    background-color: rgb(125, 182, 125);
+    background-size: contain;
+}
+#caja7:hover
+{
+    background: url(./media/lobod.png) no-repeat;
+    background-color: rgb(125, 182, 125);
+    background-size: contain;
+    transition-duration: 1.5s;
+} 
+
+ 
+
+/* ====== caja8 (cielo) ======*/
+#caja8
+{
+    grid-column:1/3;
+    grid-row: 4/6;
+
+    animation-name:  cielo;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+    @keyframes cielo
+    {
+        11.1%{background-image: url(./media/cielo1.png);}
+        22.2%{background-image: url(./media/cielo2.png);}
+        33.3%{background-image: url(./media/cielo3.png);}
+        44.4%{background-image: url(./media/cielo4.png);}
+        55.5%{background-image: url(./media/cielo5.png);}
+        66.6%{background-image: url(./media/cielo6.png);}
+        77.7%{background-image: url(./media/cielo7.png);}
+        88.8%{background-image: url(./media/cielo8.png);}
+        100%{background-image: url(./media/cielo1.png);}
+    }
+
+
+
+/* ====== caja9 (zombies) ======*/
+#caja9
+{
+    background-color: rgb(239, 234, 121);
+    grid-column:3/6;
+    grid-row: 4/5;
+}
+
+/* === zombie1 ===*/
+#zombie1
+{
+    position: absolute;
+    left: 43.8%;
+    top: 95.5%;
+
+    animation-name: zombie1;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+    @keyframes zombie1
+    {
+        100%{left:44%}
+    }
+
+/* === zombie2 ===*/
+#zombie2
+{
+    position: absolute;
+    left: 43.8%;
+    top: 95.5%;
+
+    animation-name: zombie2;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+    @keyframes zombie2
+    {
+        100%{left:54%}
+    }
+
+/* === zombie3 ===*/
+#zombie3
+{
+    position: absolute;
+    left: 43.8%;
+    top: 95.5%;
+
+    animation-name: zombie3;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+    @keyframes zombie3
+    {
+        100%{left:64%}
+    }
+
+/* === zombie4 ===*/
+#zombie4
+{
+    position: absolute;
+    left: 43.8%;
+    top: 95.5%;
+
+    animation-name: zombie4;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+    @keyframes zombie4
+    {
+        100%{left:74%}
+    }
+
+
+
+/* ======= caja10 (Jef) ======*/
+/* === fondo ===*/
+#caja10
+{
+    background-color: blue;
+    grid-column:3/5;
+    grid-row: 5/6;
+
+    animation-name:  fondojef;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+    @keyframes fondojef
+    {
+        0%{background-color: rgb(131, 131, 131);}
+        10%{background-color: rgb(191, 37, 37);}
+        20%{background-color: rgb(236, 218, 57);}
+        30%{background-color: rgb(225, 127, 29);}
+        40%{background-color: rgb(26, 120, 46);}
+        50%{background-color: rgb(30, 90, 209);}
+        60%{background-color: rgb(70, 66, 148);}
+        70%{background-color: rgb(219, 46, 175);}
+        90%{background-color: rgb(34, 114, 143);}
+        100%{background-color: rgb(131, 131, 131);}
+    }
+
+/* === jef ===*/
+#jef
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    top:1rem;
+
+    animation-name:  jef;
+    animation-duration:3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+    @keyframes jef
+    {
+        50%{transform: rotate(180deg);}
+        100%{transform: rotate(360deg);}
+    }
+
+
+
+/* ======= caja11 ======*/
+#caja11
+{
+    grid-column:5/6;
+    grid-row: 5/6;
+}
+
+
