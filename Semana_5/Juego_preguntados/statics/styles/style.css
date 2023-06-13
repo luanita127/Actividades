@@ -1,0 +1,76 @@
+/* =============================== CLASES =============================== */
+
+/* ======== OPCIONES ======== */
+.btn-res
+{
+    background-color: rgb(198, 216, 216);
+    width: 18%;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 5%/25%;
+    text-align: center;
+}
+
+.btn-res:hover
+{
+    background-color: rgb(86,130,129);
+}
+
+
+/* =============================== ID'S =============================== */
+
+/* ======== CONTENEDOR ======== */
+#resultado-preguntas
+{
+    background-color: rgb(240, 248, 255);
+    min-width: 300px;
+    width:1220px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    border-radius: 5%/15%;
+
+}
+
+/* ======== CORRECTO E INCORRECTO ======== */
+#statusc
+{
+    background-color: rgb(77, 155, 80);
+    padding: 5px;
+    width: 100px;
+    border-radius: 5%/15%;
+    text-align: center;
+    color:rgb(255,255,255);
+}
+
+#statusi
+{
+    background-color: rgb(155, 57, 57);
+    padding: 5px;
+    width: 100px;
+    border-radius: 5%/15%;
+    text-align: center;
+    color:rgb(255,255,255);
+}
+
+/* ======== MATERIA ======== */
+#materia
+{
+    /* background-color: rgb(194, 226, 255); */
+    text-align: center;
+    width:1100px;
+    padding:10px;
+    margin:auto;
+}
+
+/* ======== PREGUNTA ======== */
+#pregunta
+{
+    background-color: rgb(143, 195, 208);
+    text-align: center;
+    width:1200px;
+    padding:10px;
+    margin:auto;
+}
