@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <script src="./dynamics/js/index.js"></script>
+    <script src="./libs/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+</body>
+    <title>Lista de tareas</title>
+</head>
+<body>
+    
+    <div class="col-12 col-md-3">
+        <form id="registro">
+            <label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="Otra" name="Otra">Otra</option>
+                </select>
+            </label>
+            <br>
+            <div class="mb-3">
+                <label class="form-label">Materia
+                    <input type="text" name="Materia" class="form-control" id="materia" placeholder="Matemáticas">
+                </label>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label class="form-label">Tarea
+                    <input type="text" name="Tarea" class="form-control" id="tarea" placeholder="Ecuaciones">
+                </label>
+            </div>
+            <br>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="submit" id="btn-Registrar">Registrar</button>
+                <button class="btn btn-primary" type="reset">Limpiar</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <div id="contenedor-mostrar" style="display:none">
+
+    
+</body>
+</html>
